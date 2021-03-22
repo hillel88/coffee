@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name         Bot for Yandex
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://yandex.ru/*
+// @grant        none
+// ==/UserScript==
+
+document.getElementsByClassName('input__control input__input mini-suggest__input')[0].value="Как звучит флейта";
+let btnK = document.getElementsByClassName('buttom_theme_websearch')[0].click();
+if (btnK!=undefined){
+    btnK.click();
+}
